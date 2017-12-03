@@ -1,0 +1,26 @@
+{
+	"apps": [{
+		"name": "vueChatServer",
+		"script": "server.js",
+		"env": {
+			"COMMON_VARIBLE": "true"
+		},
+		"env_production": {
+			"NODE_ENV": "production"
+		}
+	}],
+
+	"deploy": {
+		"production": {
+			"user": "root",
+			"host": ["192.168.37.129"],
+			"ref": "origin/master",
+			"repo": "https://github.com/XuHanpeace/vueChatServer.git",
+			"path": "/www/server",
+			"ssh_options": "StrictHostKeyChecking=no",
+			"env": {
+				"NODE_ENV": "production"
+			}
+		}
+	}
+}
