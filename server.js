@@ -1,9 +1,10 @@
 const express = require('express')
 const app = express()
 
-app.use(express.static('C:/Users/xuahan/Desktop/www/dist'))
+//server build upon /www/vueChat/current/build
+app.use(express.static('/www/vueChat/current/build'))
 
-const server = app.listen(1231)
+const server = app.listen(1234)
 
 //add websocket
 //reference from https://socket.io/docs/server-api/
