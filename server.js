@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 
 //server build upon /www/vueChat/current/build
-app.use(express.static('/www/vueChat/current/build'))
+app.use(express.static('/www/vueChat/current/dist'))
 
 const server = app.listen(1234)
 
