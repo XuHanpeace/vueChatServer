@@ -18,6 +18,7 @@
 			"repo": "https://github.com/XuHanpeace/vueChatServer.git",
 			"path": "/www/server",
 			"ssh_options": "StrictHostKeyChecking=no",
+			"post-deploy": "cnpm install && pm2 startOrRestart ecosystem.json --env production",
 			"env": {
 				"NODE_ENV": "production"
 			}
