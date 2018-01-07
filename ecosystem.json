@@ -13,12 +13,12 @@
 	"deploy": {
 		"production": {
 			"user": "root",
-			"host": ["192.168.37.129"],
+			"host": ["39.106.213.209"],
 			"ref": "origin/master",
 			"repo": "https://github.com/XuHanpeace/vueChatServer.git",
 			"path": "/www/server",
 			"ssh_options": "StrictHostKeyChecking=no",
-			"post-deploy": "cnpm install && pm2 startOrRestart ecosystem.json --env production",
+			"post-deploy": "npm install && pm2 startOrRestart ecosystem.json --env production",
 			"env": {
 				"NODE_ENV": "production"
 			}
